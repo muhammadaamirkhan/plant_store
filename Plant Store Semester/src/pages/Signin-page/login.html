@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="./login.js"></script>
+   
+</head>
+<body class="bg-green-200 flex flex-col min-h-screen">
+    <!-- Main Content -->
+    <div class="flex-grow">
+        <!-- Login Form -->
+        <div class="bg-gray-200 p-8 rounded-lg shadow-lg w-96 mx-auto mt-8">
+            <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+            <form id="loginForm">
+                <!-- Email Input -->
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Enter your email" required>
+                </div>
+                <!-- Password Input -->
+                <div class="mb-6">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" id="password" name="password"
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Enter your password" required>
+                </div>
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors">Login</button>
+            </form>
+            <!-- Sign Up Link -->
+            <p class="mt-4 text-center text-sm text-gray-600">
+                Don't have an account? <a href="#" class="text-blue-500 hover:underline">Sign up</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-600 text-white p-6 mt-auto">
+        <div class="container mx-auto">
+            <!-- Copyright Text -->
+            <div class="text-center mb-6">
+                <p>&copy; World Greatest Plant Ecommerce Store</p>
+            </div>
+
+            <!-- Email, Address, and Phone -->
+            <div class="flex flex-col md:flex-row justify-between items-center text-center">
+                <!-- Email (Left) -->
+                <div class="mb-4 md:mb-0">
+                    <p>Email: <a href="mailto:info@example.com" class="hover:text-gray-400">PlantStore@gmail.com</a></p>
+                </div>
+
+                <!-- Address (Middle) -->
+                <div class="mb-4 md:mb-0">
+                    <p>456 Elm Street, Springfield, IL 62704, Pakistan</p>
+                </div>
+
+                <!-- Phone (Right) -->
+                <div>
+                    <p>Phone: <a href="tel:+1234567890" class="hover:text-gray-400">+123 456 7890</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+     <!--Tailwind Css Navbar Start-->
+ <nav class="bg-sky-800 shadow-lg">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-between py-2"> <!-- Reduced padding here (py-2) -->
+        <!--Logo-->
+        <a href="#" class="flex items-center p-1"> <!-- Reduced padding here (p-1) -->
+          <img src="../../../ascer/images/plant-logo-large__1_-removebg-preview-removebg-preview.png" alt="Plant Logo"
+            class="w-45 h-16"> <!-- Reduced logo height & width -->
+        </a>
+        <!--Menu Items-->
+        <ul class="flex text-black-200 text-lg space-x-4"> <!-- Reduced font size (text-lg) -->
+          <li>
+            <a href="../../../index.html" class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Home</a>
+            <!-- Reduced padding here (p-2) -->
+          </li>
+          <li>
+            <a href="../about-us/about.html"
+              class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">About</a>
+          </li>
+          <li>
+            <a href="../contact-us/contact.html"
+              class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Contact Us</a>
+          </li>
+          <li>
+            <a href="../order-page/orderpage.html"
+              class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Order</a>
+          </li>
+          <li>
+            <a href="../product-listing-page/productlistingpage.html"
+              class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Product Listing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Tailwind Css Navbar End-->
+    <h3>To Odre Fill th e form</h3>
+    <form>
+        <input type="text" name="name" id="name" placeholder="NAME">
+        <input type="text" name="name" id="name" placeholder="LAST NAME"><br><br>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="password" placeholder="password" required><br><br>
+
+        <input type="radio" name="gender" id="Male">
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="Female">
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Other">
+        <label for="Other">Other</label><br>
+        <button type="button" onclick="clearRadioButtons()">Clear My Choice</button>
+        <br><br>
+
+        <strong>Enter your Birthday :-</strong>
+        <input type="date" name="data" id="date"><br><br>
+
+        <label for="select"><strong>Select your choice :-</strong> </label>
+        <select name="Trees">
+            <option value="select">select..</option>
+            <option value="Apple Tree">Apple Tree</option>
+            <option value="Peepal Tree">Peepal Tree</option>
+            <option value="Guava Tree">Guava Tree</option>
+            <option value="Neem Tree">Neem Tree</option>
+        </select><br>
+
+        <h4>Choose your interest rate in plants<br>
+            <input type="range" name="range" id="range" min="0" max="100" value="0"
+                oninput="updateRangeValue(this.value)">
+            <span id="rangeValue">0%</span>
+        </h4>
+        <div>
+            <label for="comment">Your Reviews</label>
+            <br>
+            <textarea name="comment" id="comment"></textarea>
+        </div>
+        <input type="submit" value="submit">
+
+    </form>
+    <script>
+        function updateRangeValue(value) {
+            var rangeValue = document.getElementById('rangeValue');
+            rangeValue.innerText = value + '%';
+        }
+
+        function clearRadioButtons() {
+            const radios = document.querySelectorAll('input[name="gender"]');
+            radios.forEach(radio => {
+                radio.checked = false;
+            });
+        }
+    </script>
+</body>
+ <!-- Footer Start -->
+
+ <body class="flex flex-col min-h-screen">
+    <main class="flex-grow">
+      <!-- Your main content goes here -->
+    </main>
+    <footer class="bg-gray-600 text-white p-6 mt-auto">
+      <div class="container mx-auto">
+        <!-- Copyright Text (Moved Above) -->
+        <div class="text-center mb-6">
+          <p>&copy; World Greatest Plant Ecommerce Store.</p>
+        </div>
+
+        <!-- Email, Address, and Phone -->
+        <div class="flex flex-col md:flex-row justify-between items-center text-center">
+          <!-- Email (Left) -->
+          <div class="mb-4 md:mb-0">
+            <p>Email: <a href="mailto:info@example.com" class="hover:text-gray-400">PlantStore@gmail.com</a></p>
+          </div>
+
+          <!-- Address (Middle) -->
+          <div class="mb-4 md:mb-0">
+            <p>456 Elm Street, Springfield, IL 62704, Pakistan</p>
+          </div>
+
+          <!-- Phone (Right) -->
+          <div>
+            <p>Phone: <a href="tel:+1234567890" class="hover:text-gray-400">+123 456 7890</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- Footer End -->
+</html>

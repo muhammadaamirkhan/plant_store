@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <!-- Tailwind Css Navbar Start -->
+  <nav class="bg-sky-800 shadow-lg">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-between py-2">
+        <!-- Logo -->
+        <a href="#" class="flex items-center p-1">
+          <img src="./ascer/images/plant-logo-large__1_-removebg-preview-removebg-preview.png" alt="Plant Logo"
+            class="w-45 h-16">
+        </a>
+
+        <!-- Menu Items (Centered) -->
+        <ul class="flex text-black-200 text-lg space-x-4 mx-auto">
+          <li>
+            <a href="./index.html" class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Home</a>
+          </li>
+          <li>
+            <a href="./src/pages/about-us/about.html"
+              class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">About</a>
+          </li>
+          <li>
+            <a href="./src/pages/contact-us/contact.html"
+              class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Contact Us</a>
+          </li>
+          <li>
+            <a href="./src/pages/order-page/orderpage.html"
+              class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Order</a>
+          </li>
+          <li>
+            <a href="./src/pages/product-listing-page/productlistingpage.html"
+              class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Product Listing</a>
+          </li>
+          <!-- Login Button -->
+        
+          <li>
+            <a href="./src/pages/Signin-page/login.html"
+            <button id="loginButton" class="p-2 hover:text-red-600 hover:border-b-2 hover:border-amber-200">Login</button>
+         
+          </a> </li>
+        </ul>
+
+        <!-- Search Bar (Right) -->
+        <div class="flex-grow max-w-md ml-4">
+          <div class="relative">
+            <input type="text" placeholder="Search..."
+              class="w-110 px-4 py-2 pr-10 border border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-transparent text-white placeholder-gray-300" />
+            <!-- Search Icon -->
+            <span class="absolute inset-y-0 right-0 flex items-center pr-3">
+              <svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Tailwind Css Navbar End -->
+
+  
+
+
+  <!-- Carousel Section -->
+  <div class="relative w-full max-w-4xl mx-auto mt-8 overflow-hidden">
+    <!-- Carousel Container -->
+    <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+      <!-- Carousel Items -->
+      <div class="min-w-full flex justify-center items-center">
+        <img src="./ascer/images/download.jpg" alt="Plant 1" class="w-300 h-70 object-cover rounded-lg shadow-lg">
+      </div>
+      <div class="min-w-full flex justify-center items-center">
+        <img src="./ascer/images/images.jpg" alt="Plant 2" class="w-300 h-70 object-cover rounded-lg shadow-lg">
+      </div>
+      <div class="min-w-full flex justify-center items-center">
+        <img src="./ascer/images/potted-edge.jpg" alt="Plant 3" class="w-300 h-70 object-cover rounded-lg shadow-lg">
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+      &lt;
+    </button>
+    <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+      &gt;
+    </button>
+  </div>
+
+  <!-- Welcome Section -->
+  <h2 class="text-center text-2xl font-bold mt-8 animate-pulse">
+    Welcome to Plant Online Store
+  </h2>
+  <p class="text-center max-w-2xl mx-auto">
+    Discover a world of green, right at your fingertips!
+    We make it easy to purchase the perfect plants for your space.
+  </p>
+
+  <!-- Grid Layout -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+    <article class="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
+      <h2 class="text-xl font-bold">Plant of cactus</h2>
+      <p>click on me to visit cactus picture</p>
+    </article>
+    <article class="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
+      <h2 class="text-xl font-bold">Grid 2</h2>
+      <p>Description 2.</p>
+    </article>
+    <article class="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
+      <h2 class="text-xl font-bold">Grid 3</h2>
+      <p>Description 3.</p>
+    </article>
+  </section>
+
+  <!-- Details Section -->
+  <details class="max-w-2xl mx-auto mt-8 p-4 bg-gray-100 rounded-lg text-center">
+    <summary class="font-bold cursor-pointer">Learn More About Our Plant Collection</summary>
+    <div class="mt-4 text-left">
+      <p>We have a wide variety of plants, including indoor and outdoor plants, succulents, and flowering plants.</p>
+      <p class="mt-2">Our plants are carefully selected to ensure they are healthy and thriving. We also offer plant care tips and
+        advice to help you keep your plants happy and healthy.</p>
+      <ul class="list-disc list-inside mt-2">
+        <li>Indoor Plants: Snake Plant, Spider Plant, Bamboo Palm</li>
+        <li>Outdoor Plants: Lavender, Rosemary, Thyme</li>
+        <li>Succulents: Aloe Vera, Echeveria, Crassula</li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- Footer Start -->
+  <footer class="bg-gray-600 text-white p-6 mt-8">
+    <div class="container mx-auto">
+      <!-- Copyright Text -->
+      <div class="text-center mb-6">
+        <p>&copy; World Greatest Plant Ecommerce Store</p>
+      </div>
+
+      <!-- Email, Address, and Phone -->
+      <div class="flex flex-col md:flex-row justify-between items-center text-center">
+        <!-- Email (Left) -->
+        <div class="mb-4 md:mb-0">
+          <p>Email: <a href="mailto:info@example.com" class="hover:text-gray-400">PlantStore@gmail.com</a></p>
+        </div>
+
+        <!-- Address (Middle) -->
+        <div class="mb-4 md:mb-0">
+          <p>456 Elm Street, Springfield, IL 62704, Pakistan</p>
+        </div>
+
+        <!-- Phone (Right) -->
+        <div>
+          <p>Phone: <a href="tel:+1234567890" class="hover:text-gray-400">+123 456 7890</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Carousel JavaScript -->
+  <script>
+    const carousel = document.getElementById('carousel');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    let currentIndex = 0;
+
+    const showSlide = (index) => {
+      const offset = -index * 100;
+      carousel.style.transform = `translateX(${offset}%)`;
+    };
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : 2;
+      showSlide(currentIndex);
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex < 2) ? currentIndex + 1 : 0;
+      showSlide(currentIndex);
+    });
+
+    // Auto-play the carousel (optional)
+    setInterval(() => {
+      currentIndex = (currentIndex < 2) ? currentIndex + 1 : 0;
+      showSlide(currentIndex);
+    }, 5000);
+  </script>
+</body>
+
+</html>

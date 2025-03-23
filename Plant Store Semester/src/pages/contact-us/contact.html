@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+     <!--Tailwind Css Navbar Start-->
+ <nav class="bg-sky-800 shadow-lg">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-between py-2"> <!-- Reduced padding here (py-2) -->
+        <!--Logo-->
+        <a href="#" class="flex items-center p-1"> <!-- Reduced padding here (p-1) -->
+          <img src="../../../ascer/images/plant-logo-large__1_-removebg-preview-removebg-preview.png" alt="Plant Logo"
+            class="w-45 h-16"> <!-- Reduced logo height & width -->
+        </a>
+        <!--Menu Items-->
+        <ul class="flex text-black-200 text-lg space-x-4"> <!-- Reduced font size (text-lg) -->
+          <li>
+            <a href="../../../index.html" class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Home</a>
+            <!-- Reduced padding here (p-2) -->
+          </li>
+          <li>
+            <a href="../about-us/about.html"
+              class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">About</a>
+          </li>
+          <li>
+            <a href="../contact-us/contact.html"
+              class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Contact Us</a>
+          </li>
+          <li>
+            <a href="../order-page/orderpage.html"
+              class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Order</a>
+          </li>
+          <li>
+            <a href="../product-listing-page/productlistingpage.html"
+              class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Product Listing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Tailwind Css Navbar End-->
+
+  <!-- Contact Form Section -->
+  <div class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+    <form class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+      <!-- Name Field -->
+      <div class="mb-6">
+        <label for="name" class="block text-gray-700 font-bold mb-2" required>Name</label>
+        <input type="text" id="name" name="name"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+          placeholder="Enter your name" required>
+      </div>
+      <!-- Email Field -->
+      <div class="mb-6">
+        <label for="email" class="block text-gray-700 font-bold mb-2" required>Email</label>
+        <input type="email" id="email" name="email"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+          placeholder="Enter your email" required>
+      </div>
+      <!-- Subject Field -->
+      <div class="mb-6">
+        <label for="subject" class="block text-gray-700 font-bold mb-2">Subject</label>
+        <input type="text" id="subject" name="subject"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+          placeholder="Enter the subject" required>
+      </div>
+      <!-- Message Field -->
+      <div class="mb-6">
+        <label for="message" class="block text-gray-700 font-bold mb-2" required>Message</label>
+        <textarea id="message" name="message" rows="5"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+          placeholder="Enter your message" required></textarea>
+      </div>
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit"
+          class="bg-sky-600 text-white px-6 py-3 rounded-lg hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500">Send
+          Message</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-600 text-white p-6 mt-auto">
+    <div class="container mx-auto">
+      <div class="text-center mb-6">
+        <p>&copy; World Greatest Plant Ecommerce Store.</p>
+      </div>
+      <div class="flex flex-col md:flex-row justify-between items-center text-center">
+        <div class="mb-4 md:mb-0">
+          <p>Email: <a href="mailto:info@example.com" class="hover:text-gray-400">PlantStore@gmail.com</a></p>
+        </div>
+        <div class="mb-4 md:mb-0">
+          <p>456 Elm Street, Springfield, IL 62704, Pakistan</p>
+        </div>
+        <div>
+          <p>Phone: <a href="tel:+1234567890" class="hover:text-gray-400">+123 456 7890</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

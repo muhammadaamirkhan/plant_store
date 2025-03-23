@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./productListing.js"></script>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+  <!-- Navigation Bar -->
+  <nav class="bg-sky-800 shadow-lg">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-between py-2">
+        <!-- Logo -->
+        <a href="#" class="flex items-center p-1">
+          <img src="../../../ascer/images/plant-logo-large__1_-removebg-preview-removebg-preview.png" alt="Plant Logo"
+            class="w-45 h-16">
+        </a>
+        <!-- Menu Items -->
+        <ul class="flex text-white text-lg space-x-4">
+          <li><a href="../../../index.html" class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Home</a></li>
+          <li><a href="../about-us/about.html" class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">About</a></li>
+          <li><a href="../contact-us/contact.html" class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Contact Us</a></li>
+          <li><a href="../order-page/orderpage.html" class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Order</a></li>
+          <li><a href="./productlistingpage.html" class="p-2 hover:text-amber-200 hover:border-b-2 hover:border-amber-200">Product</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mx-auto p-4 flex-grow">
+    <h2 class="text-2xl font-bold mb-4">Shop Plants</h2>
+    
+    <!-- Filter Dropdown -->
+    <select id="filter" class="p-2 border rounded">
+      <option value="all">All Categories</option>
+      <option value="Indoor">Indoor</option>
+      <option value="Outdoor">Outdoor</option>
+      <option value="Succulent">Succulent</option>
+      <option value="Flowering">Flowering</option>
+      <option value="Gardening Tools">Gardening Tools</option>
+    </select>
+
+    <!-- Plant Cards -->
+    <div id="plant-container" class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-600 text-white p-6 mt-8 w-full">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Plant Shop - All Rights Reserved</p>
+      <p>Email: <a href="mailto:PlantStore@gmail.com" class="hover:text-gray-400">PlantStore@gmail.com</a></p>
+      <p>Address: 456 Elm Street, Springfield, IL, Pakistan</p>
+      <p>Phone: <a href="tel:+1234567890" class="hover:text-gray-400">+123 456 7890</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
